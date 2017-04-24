@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.myapplication.MainActivity">
+
+
+    <RelativeLayout
+        android:background="#919187"
+        android:layout_width="450dp"
+        android:layout_height="300dp"
+
+        android:layout_gravity="center"
+        android:id="@+id/button_Q1"
+        style="?android:attr/buttonStyle"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="scroll_up_next_Q1">
+
+        <TextView
+            android:background="#0eaf37"
+            android:id="@+id/the_text"
+            android:text="NEXT QUESTION"
+            android:textColor="#000"
+            android:textSize="@dimen/small"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toLefttOf="@id/the_icon_right"
+            android:layout_toBottomOf="@id/the_icon_top"
+
+
+            android:gravity="center"/>
+        <LinearLayout
+            android:background="#f451cf"
+            android:id="@+id/the_icon_right"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+
+            android:gravity="center">
+            <ImageView
+                android:background="#f6d660"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_vertical_align_top_black_24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#7acbec"
+            android:id="@+id/the_icon_top"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center">
+            <ImageView
+                android:background="#f6d660"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_vertical_align_top_black_24dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+<!--    android:layout_toRightOf="@+id/the_text_part"
+    android:layout_toTopOf="@+id/the_text_part" -->
+
+</LinearLayout>
+
+
+    <!--That LinearLayout is a scroll up button -->
+
